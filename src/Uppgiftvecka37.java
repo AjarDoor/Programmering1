@@ -5,15 +5,15 @@ public class Uppgiftvecka37 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner (System.in);
-		System.out.println("Ge mig tio heltal");
+		System.out.println("Give me ten numbers");
 		
 		double num1 = input.nextDouble();
-		double smallestnum = num1;
+		double smallestnum = num1; // We make our very first input the largest and the smallest number so it sets the bar for lowest and highest number and gives these two variables a base value
 		double largestnum = num1;
 		
-		double num2 = input.nextDouble();
-		if (num2 < smallestnum) {smallestnum = num2;}
-		if (num2 > largestnum) {largestnum= num2;}
+		double num2 = input.nextDouble(); // This lets the program know that we want to make a new input with a different variable
+		if (num2 < smallestnum) {smallestnum = num2;} // If the number in this input is greater than the current largest number then it becomes the new largest number
+		if (num2 > largestnum) {largestnum= num2;} // If the number in this input is less than the current smallest number then it becomes the new smallest number
 		
 		double num3 = input.nextDouble();
 		if (num3 < smallestnum) {smallestnum = num3;}
@@ -48,9 +48,12 @@ public class Uppgiftvecka37 {
 		if (num10 > largestnum) {largestnum= num10;}
 		
 		input.close();
+		double totalsum = (num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10);
+		double median = (totalsum/10); // 10 Is the number of inputs required, so to get the median we divide the total by the number of inputs made
 		
 		System.out.println("The smallest number is: " + smallestnum);
 		System.out.println("The largest number is: " + largestnum);
+		System.out.println("The median value is: " + median);
 	}
 
 
