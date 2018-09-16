@@ -56,6 +56,4 @@ public class Uppgiftvecka37 {
 		System.out.println("The median value is: " + median);
 	}
 
-
-
 }
