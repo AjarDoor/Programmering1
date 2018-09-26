@@ -4,7 +4,7 @@ public class Uppgiftvecka37 {
 	
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner (System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Give me ten numbers");
 		
 		double num1 = input.nextDouble();
