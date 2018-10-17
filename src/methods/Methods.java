@@ -5,7 +5,7 @@ public class Methods {
 	public static void main(String[] args) {
 		int s = 5; // This is for the final method that i tested
 		stair(s); // Change this to the method you wish to view
-
+		
 	}
 
 	public static void lol() {
