@@ -53,27 +53,18 @@ public class stringpractice {
 	}
 
 	public static String sjorovare(String str) {
-		String sol = "";
+		String sol = ""; 
 		String cons = "bcdfghjklmnpqrstvwz";
 		for (int i = 0; i < str.length(); i++) {
 			for (int j = 0; j < cons.length(); j++) {
 				if (str.charAt(i) == cons.charAt(j) || str.charAt(i) == cons.toUpperCase().charAt(j)) {
 					String arr = (str.charAt(i) + "o" + str.toLowerCase().charAt(i));
-					sol = sol + arr;
-					break;
-				} else if (str.charAt(i) == 'x') {
-					sol = sol + "koksos";
-					break;
-				} else if (str.charAt(i) == 'X') {
-					sol = sol + "Koksos";
-					break;
-				} else if (j == cons.length() - 1) {
-					sol = sol + str.charAt(i);
-				}
-
+					sol = sol + arr; break;
+				} else if (str.charAt(i) == 'x') { sol = sol + "koksos"; break;
+				} else if (str.charAt(i) == 'X') { sol = sol + "Koksos"; break;
+				} else if (j == cons.length() - 1) {sol = sol + str.charAt(i);}
 			}
-		}
-		return sol;
+		} return sol;
 	}
 	
 	
