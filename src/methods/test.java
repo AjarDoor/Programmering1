@@ -10,7 +10,7 @@ public class test {
 			for(int b = str.length(); b != i; b--) {
 				System.out.println(str.replace(str.charAt(i), str.charAt(b)));
 			}
-		}
+		} Input.close();
 	}
 	
 }
