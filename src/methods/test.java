@@ -12,5 +12,4 @@ public class test {
 			}
 		} Input.close();
 	}
-	
 }
