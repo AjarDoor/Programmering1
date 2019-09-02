@@ -45,15 +45,6 @@ public class repuppg1 {
 		return reversed;
 	}
 
-	public static String[] arr() {
-
-		System.out.println("Write words using blank spaces to insert them into a different index");
-		String temp = input.nextLine();
-		String[] strarr = temp.split(" ");
-		for(int i = 0; i < strarr.length; i++) {
-			System.out.print(strarr[i]);
-		}
-		return strarr;
-	}
+	
 
 }
