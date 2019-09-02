@@ -32,7 +32,7 @@ public class Grafik extends Application{
 		//root.getChildren().add(FlagMaker.lübeck(300));
 		//root.getChildren().add(FlagMaker.lucca(300));
 		//root.getChildren().add(FlagMaker.monaco(300));
-		root.getChildren().add(FlagMaker.austria(300));
+		//root.getChildren().add(FlagMaker.austria(300));
 
 
 	}
