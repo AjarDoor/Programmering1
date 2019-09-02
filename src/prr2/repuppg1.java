@@ -8,6 +8,8 @@ public class repuppg1 {
 
 	public static void main(String[] args) {
 		sum();
+		reverse(input.nextLine());
+		
 	}
 	
 	public static int sum() {
@@ -17,14 +19,31 @@ public class repuppg1 {
 		int summa = 0;
 		while(!exit) {
 			
-			summa =+ input.nextInt();
-			
 			if(input.nextInt() == 0) {
 				exit = true;
+			}else {
+				summa =+ input.nextInt();	
 			}
 		}
 		System.out.println("Summan av alla tal är " + summa);
 		return summa;
 	}
-
+	
+	public static String reverse(String string) {
+		
+		System.out.println("Input a word and have it reversed");
+		string = input.nextLine();
+		int length = string.length() - 1;
+		String reversed = "";
+		
+		for(int i = 0; i < string.length(); i++) {
+			reversed += string.charAt(length);
+			length--;
+		}
+		
+		System.out.println(reversed);
+		return reversed;
+	}
+	
+	
 }
