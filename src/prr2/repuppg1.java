@@ -9,6 +9,7 @@ public class repuppg1 {
 	public static void main(String[] args) {
 		sum();
 		reverse(input.nextLine());
+		storage();
 		Blockuppg1.Block();
 	}
 
@@ -43,6 +44,12 @@ public class repuppg1 {
 
 		System.out.println(reversed);
 		return reversed;
+	}
+	public static String[] storage() {
+		System.out.println("Write words using blank spaces to insert them into a different index");
+		String temp = input.nextLine();
+		String[] stored = temp.split(" ");
+		return stored;
 	}
 
 	
