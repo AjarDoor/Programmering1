@@ -9,7 +9,7 @@ public class repuppg1 {
 	public static void main(String[] args) {
 		sum();
 		reverse(input.nextLine());
-		arr();
+		Blockuppg1.Block();
 	}
 
 	public static int sum() {
@@ -18,11 +18,11 @@ public class repuppg1 {
 		boolean exit = false;
 		int summa = 0;
 		while (!exit) {
-
-			if (input.nextInt() == 0) {
+			int num = input.nextInt();
+			if (num == 0) {
 				exit = true;
 			} else {
-				summa = +input.nextInt();
+				summa += num;
 			}
 		}
 		System.out.println("Summan av alla tal är " + summa);
